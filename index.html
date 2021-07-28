@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Tickets</title>
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="movie-container">
+            <!-- Create a div of class “movie-container”
+                ● Create a label “Select a movie”
+                ● Create a select containing some movies and prices
+                associated(use value attribute for setting the price) -->
+            <label for="movie">Select a movie:</label>
+            <select name="movie" id="movie">
+                <option value="10">Rocky $10</option>
+                <option value="12">Dune $12</option>
+                <option value="8">Pulp Fiction $8</option>
+                <option value="11">Religulous $11</option>
+            </select>
+        </div>
+        <div class="paragraph-container">
+            <!-- Create 2 paragraphs for text
+                create 2 spans with id count and total
+            -->
+            <p class="paragraph-text">Number of tickets: <span id="count">0</span></p>
+            <p class="paragraph-text">Total: <span id="total">0</span></p>
+        </div>
+        <div class="seat-container">
+            <!-- Create a div of class container and inside create 6 div of class row 
+            Each div of class row must contain 8 divs of class seat and only some of them should be occupied
+            -->
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        <ul class="legend">
+            <li>
+                <div class="seat"></div>
+                <p><small>Unoccupied</small></p>
+            </li>
+            <li>
+                <div class="seat selected"></div>
+                <p><small>Selected</small></p>
+            </li>
+            <li>
+                <div class="seat occupied"></div>
+                <p><small>Occupied</small></p>
+            </li>
+        </ul>
+        <!-- Create an unodered list containing 3 lis
+● First li: class “unoccupied”
+● Second li: class “selected”
+● Third li: class “occupied”
+Hint: use <small> tag for the text -->
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
